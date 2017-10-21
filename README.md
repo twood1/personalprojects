@@ -21,11 +21,13 @@ My projects here are as follows:
 	* I used a genetic algorithm to solve this: Some HC's were 	hard coded, i.e. groups of 3, and other HC's caused 	immediate fatality of the produced schedule (Multiple jobs 	same day)
 	* SC's broken produce a positive value added to the score. 	An increase in score corresponds to a loss of fitness, 	i.e. a worse schedule.
 	* The genetic algorithm is as follows:
-		* Generate random schedule
+		* Generate random schedule X
 		* Score schedule
+		* parentArray <- [X]
 			* Repeat
+				* offspringArray <- []
 				* Sort population array by score (I should 				have used min heap instead actually)
 				* Take lowest scoring matrix and randomly 					permute specific positions and add to 					offspring array (Elitism).
 				* Select n schedules to reproduce from parent array, 						weighted probability by their score. The 					lower the score, the higher probability 					they have to be selected to reproduce.
-				* Mutate the selected n schedules 						preserving the HC's, scoring each one, and 				remembering Best solution found globally
+				* Mutate the selected n schedules 						preserving the HC's, scoring each one, and 				remembering Best solution found globally. Store in offspring array.
 				* Replace parent array with offspring 					array
