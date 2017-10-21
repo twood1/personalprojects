@@ -4,7 +4,7 @@ My projects here are as follows:
 
 * GDAX Ticker bot - Ticker.py:
 	* This bot does what it sounds like. It writes into a file 	the order book for every second. Given fast enough queries 	from the GDAX website, one could write an arbitrage bot 	with this. In order for the script to work for you, you 	need two things: A GDAX private key (register with GDAX 	and download the key that you request.) Here is how:
-	[https://docs.gdax.com/#generating-an-api-key](Generating 	API Key). You will also need to modify the line that 	writes a .txt file to the appropriate path you wish to 	write the 	order book to.
+	[Generating API key](https://docs.gdax.com/#generating-an-api-key). You will also need to modify the line that 	writes a .txt file to the appropriate path you wish to 	write the 	order book to.
 
 * Neural Network - Prac.py
 	* A simple (broken) neural network. I was fiddling around 	with it a while ago and broke the indexing such that I 	have errors... But, besides for that, it works just like a 	simple NN should!
