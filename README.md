@@ -26,6 +26,6 @@ My projects here are as follows:
 			* Repeat
 				* Sort population array by score (I should 				have used min heap instead actually)
 				* Take lowest scoring matrix and randomly 					permute specific positions and add to 					offspring array (Elitism).
-				* Select n schedules to reproduce, 						weighted probability by their score. The 					lower the score, the higher probability 					they have to be selected to reproduce.
+				* Select n schedules to reproduce from parent array, 						weighted probability by their score. The 					lower the score, the higher probability 					they have to be selected to reproduce.
 				* Mutate the selected n schedules 						preserving the HC's, scoring each one, and 				remembering Best solution found globally
 				* Replace parent array with offspring 					array
